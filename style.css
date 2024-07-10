@@ -33,3 +33,19 @@ body {
     min-width: 8rem;
 }
 
+.inputGroup{
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.formBtn {
+    gap: 20px;
+}
+
+.formBtn button {
+    width: 150px;
+}
+
+#passwordBtn {
+    margin-top: 5px;
+}
