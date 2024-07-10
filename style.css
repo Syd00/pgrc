@@ -1,6 +1,5 @@
-#hero img {
-    width: 100%;
-    opacity: 0.5;
+body {
+    background-color: antiquewhite;
 }
 
 #hero {
@@ -8,9 +7,15 @@
     text-align: center;
 }
 
+#hero img {
+    width: 100%;
+    opacity: 0.5;
+}
+
 #hero h1 {
     font-weight: bold;
     font-size: 5rem;
+    color: rgb(53, 49, 49);
 }
 
 #centered {
@@ -19,3 +24,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+#mainContent {
+    text-align: center;
+}
+
+#mainButtons button {
+    min-width: 8rem;
+}
+
