@@ -25,10 +25,10 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="login.html">Accedi</a>
+                        <a class="nav-link" href="login.html">Accedi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="register.html">Registrati</a>
+                        <a class="nav-link active" href="register.html">Registrati</a>
                     </li>
                 </ul>
             </div>
@@ -37,21 +37,28 @@
 
 
     <div class="container">
-        <h1>Hello, world!</h1>
-        <div class="login">
-            <form>
+        <div class="register">
+            <form onsubmit="return registerUser()">
+                <div class=" input d-flex justify-content-between">
+                    <div class="mb-3 flex-fill">
+                        <label for="regName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="regName" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3 flex-fill">
+                        <label for="regSurname" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="regSurname" aria-describedby="emailHelp">
+                    </div>
+                </div>
                 <div class="input d-flex justify-content-between">
                     <div class="mb-3 flex-fill">
-                        <label for="loginEmail" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
+                        <label for="regEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="regEmail" aria-describedby="emailHelp">
 
                     </div>
                     <div class="mb-3 flex-fill">
-                        <label for="loginPassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="loginPassword">
-                        <button type="button" id="showPwd" class="btn btn-primary">Mostra Password</button>
+                        <label for="regPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="regPassword">
                     </div>
-
                 </div>
                 <div id="submit">
                     <button type="submit" class="btn btn-primary">Submit</button>

@@ -1,7 +1,14 @@
 document.querySelector('#mainButtons').querySelectorAll('button').forEach(btn => {
-    btn.addEventListener('click', checkUser);
+    btn.addEventListener('click', e => {
+        e.target.value == 'login' ? location.href = 'login.html' : location.href = 'register.html';
+    });
 })
 
-function checkUser(e) {
+function registerUser() {
+    users = JSON.parse(localStorage.getItem('users'));
+
+    if (users == undefined)
+        users = [];
+
     
 }

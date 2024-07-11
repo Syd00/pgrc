@@ -12,9 +12,13 @@ body {
     opacity: 0.5;
 }
 
+h1 {
+    text-align: center;
+}
+
 #hero h1 {
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 8rem;
     color: rgb(53, 49, 49);
 }
 
@@ -48,4 +52,16 @@ body {
 
 #passwordBtn {
     margin-top: 5px;
+}
+
+.input {
+    gap: 4rem;
+}
+
+#showPwd {
+    margin-top: 1rem;
+}
+
+#submit {
+    text-align: center;
 }
